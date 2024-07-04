@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+
+/* cards*/
+.card {
+  transition: transform 0.3s ease; /* Agrega una transición suave para el escalado */
+  margin: 10px;
+  /* cursor: pointer; */
+  position: relative; /* Asegura que la posición relativa se aplique correctamente */
+}
+
+.card:hover {
+  transform: scale(1.1); /* Escala la carta al hacer hover */
+  background-color: white;
+  z-index: 40;
+  /* position: relative; */
+}
+
+.btn-card{
+  transition: all 200ms;
+}
+
+.btn-card:hover{
+  color: white;
+  box-shadow: 0px 0px 2px 2px rgb(85, 85, 228);
+}
+
